@@ -4,12 +4,14 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './components/Navbar'
 import ProductExplorePage from './components/ProductExplorerPage'
+import ProductDetails from './components/ProductDetails'
 
 function App() {
   return (
     <>
       <Navbar/>
       <ProductExplorePage/>
+      <ProductDetails/>
     </>
   )
 }

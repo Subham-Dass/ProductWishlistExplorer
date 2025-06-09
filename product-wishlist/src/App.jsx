@@ -6,8 +6,6 @@ import Navbar from './components/Navbar'
 import ProductExplorePage from './components/ProductExplorerPage'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <Navbar/>

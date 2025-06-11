@@ -1,17 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Navbar from './components/Navbar'
-import ProductExplorePage from './components/ProductExplorerPage'
+import { Route, Routes } from "react-router";
+import "./App.css";
+import Navbar from "./components/Navbar";
+import ProductExplorePage from "./components/ProductExplorerPage";
+import ProductDetails from "./components/ProductDetails";
 
 function App() {
   return (
     <>
-      <Navbar/>
-      <ProductExplorePage/>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<ProductExplorePage />} />
+        <Route path="/product-details" element={<ProductDetails />} />
+      </Routes>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

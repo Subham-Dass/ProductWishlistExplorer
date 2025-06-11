@@ -18,9 +18,9 @@ const ProductExplorePage = () => {
         <div className="flex flex-col items-center justify-center mt-10">
           <div className="">
             <span>Showing 20 of 189 products</span>
-            <div className="grid grid-cols-4 gap-5 mt-5">
-              {iter.map((_, i) => (
-                <ProductCard key={i} />
+            <div className="grid grid-cols-4 gap-5 mt-5 cursor-pointer">
+              {iter.map((product, i) => (
+                <ProductCard key={i} productData={product} />
               ))}
             </div>
           </div>

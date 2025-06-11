@@ -1,4 +1,14 @@
+import { useNavigate } from "react-router";
+
 const ProductCard = ({data}, handleClick) => {
+  const navigate = useNavigate();
+
+  // console.log('Product Data',  data)
+
+  function showDetails(id) {
+    navigate("/product-details/" + id);
+  }
+
   // console.log(data)
   let originalPrice = (data.price/(1-(data.discountPercentage/100))).toFixed(2)
   console.log(handleClick)
@@ -6,9 +16,12 @@ const ProductCard = ({data}, handleClick) => {
   // console.log(item.id , category , description, discountPercentage, price, rating, images[0])
   return (
     <>
-      <div className="bg-white h-auto flex flex-col rounded shadow p-5 gap-2">
+      <div
+        className="bg-white h-auto flex flex-col rounded shadow p-5 gap-2"
+        onClick={showDetails.bind(data.id)}
+      >
         <span className="px-2 rounded-full bg-red-500 text-white absolute ml-2 mt-2 w-fit text-sm">
-          {data.discountPercentage}%
+          -{data.discountPercentage}%
         </span>
         <img src={data.images[0]} alt="" className="w-70 " />
         <span className="px-3 py-1 bg-gray-50 rounded-full w-fit text-sm">{data.category}</span>

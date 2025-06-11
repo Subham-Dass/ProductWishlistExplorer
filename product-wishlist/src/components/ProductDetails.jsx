@@ -6,8 +6,8 @@ function ProductDetails() {
       <div className="px-8 pt-4 text-sm text-blue-500">← Back to Products</div>
       <div className="flex justify-around">
         <div className="w-1/2 px-8 py-3">
-          <img src="" alt="" className="w-full h-1/2 mb-2 rounded-md shadow "/>
-          <img src="" alt="" className="w-15 h-15 rounded-md border border-blue-100 hover:border-blue-400" />
+          <img src="https://placehold.co/50x50" alt="" className="w-full h-1/2 mb-2 rounded-md shadow "/>
+          <img src="https://placehold.co/10x10" alt="" className="w-15 h-15 rounded-md border border-blue-100 hover:border-blue-400" />
         </div>
         <div className="w-1/2">
           <div className="flex flex-col">

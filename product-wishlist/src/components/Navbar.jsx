@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router";
 const Navbar = () => {
   return (
     <>
-      <div className="px-20 py-10 flex justify-between items-center">
+      <div className="px-20 py-10 flex justify-between items-center shadow-lg shadow-gray-200 z-1">
         <Link to={"/"}>
           <div className="cursor-pointer flex justify-between gap-2">
             <img src="https://placehold.co/30x30" alt="" />
